@@ -44,6 +44,7 @@ blockquote {
     font-family: 'Dancing Script', cursive ;
     padding: 1rem 2rem;
     margin: 2rem 0;
+    text-align: center;
 }
  .name {
     font-family: 'Roboto' ,sans-serif;
@@ -132,6 +133,8 @@ img {
     justify-content: space-evenly;
     gap: 6rem;
     margin-bottom: 0;
+    text-align: left;
+    justify-content: left;
 }
 
 @media (min-width: 768px) {
@@ -168,7 +171,7 @@ img {
     flex-wrap: wrap;
     padding: 2rem;
     text-align: center;
-    
+    align-items: flex-start;
 }
 
 .feature-block {
@@ -185,6 +188,18 @@ img {
     margin-top: 5px;
  }
 
+.feature-block img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    height: 250px;
+}
+
+.feature-block:nth-child(2) img {
+    max-width: 350px; 
+}
+
+ 
  .features h2 {
     text-align: center;
     margin-top: 0;
@@ -276,3 +291,4 @@ img {
     object-fit: contain;
     
 }
+
